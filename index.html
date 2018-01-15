@@ -4,40 +4,30 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <link type="text/css" rel="stylesheet" href="style.css"/>
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
-    <style type="text/css">
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-55956641-1', 'auto');
+      ga('send', 'pageview');
 
-.node circle {
-  cursor: pointer;
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-.node text {
-  font-size: 11px;
-}
-
-path.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-
-    </style>
+    </script>
   </head>
   <body>
     <div id="body">
+      <div id="header">
+        Tools and Libraries for Building Web-based Data Visualisations
+      </div>
       <div id="footer">
-        d3.layout.tree
-        <div class="hint">click or option-click to expand or collapse</div>
+        <div class="hint"><p>This is an overview of tools available for building web-based data visualisations and is for a presentation by <a href="http://animateddata.co.uk">Peter Cook</a> at <a href="http://www.meetup.com/Data-Visualisation-Brighton/">Data Visualisation Brighton</a>.</p><p>It is not comprehensive. If you feel there's a glaring omission please <a href="http://animateddata.co.uk/contact/">contact me</a>. (For a more comprehensive list try Andy Kirk's <a href="http://www.visualisingdata.com/index.php/resources/">Visualising Data</a>.)</p><p>This is an adaptation of Mike Bostock's D3 tree layout <a href="http://mbostock.github.io/d3/talk/20111018/tree.html">example</a>. Thanks Mike :)</p><p>Click a circle to expand or collapse. Grey indicates not free.</p><p>I'm available <a href="http://animateddata.co.uk/contact">for hire</a>.</p><p><a href="http://animateddata.co.uk/training">Find out</a> about my <a href="http://animateddata.co.uk/training">data visualisation workshops</a></p>.</div>
       </div>
     </div>
     <script type="text/javascript">
 
-var m = [20, 120, 20, 120],
+var m = [20, 120, 20, 20],
     w = 1280 - m[1] - m[3],
     h = 800 - m[0] - m[2],
     i = 0,
@@ -55,7 +45,7 @@ var vis = d3.select("#body").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.json("flare.json", function(json) {
+d3.json("data.json", function(json) {
   root = json;
   root.x0 = h / 2;
   root.y0 = 0;
@@ -68,11 +58,11 @@ d3.json("flare.json", function(json) {
   }
 
   // Initialize the display to show a few nodes.
-  root.children.forEach(toggleAll);
-  toggle(root.children[1]);
-  toggle(root.children[1].children[2]);
-  toggle(root.children[9]);
-  toggle(root.children[9].children[0]);
+  // root.children.forEach(toggleAll);
+  // toggle(root.children[1]);
+  // toggle(root.children[1].children[2]);
+  // toggle(root.children[9]);
+  // toggle(root.children[9].children[0]);
 
   update(root);
 });
@@ -100,12 +90,24 @@ function update(source) {
       .attr("r", 1e-6)
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
-  nodeEnter.append("svg:text")
+  nodeEnter.append('a')
+      .attr('xlink:href', function(d) {
+        return d.url;
+      })
+      .append("svg:text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
+      .style('fill', function(d) {
+        return d.free ? 'black' : '#999';
+      })
       .style("fill-opacity", 1e-6);
+
+  nodeEnter.append("svg:title")
+    .text(function(d) {
+      return d.description;
+    });
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -113,7 +115,7 @@ function update(source) {
       .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 4.5)
+      .attr("r", 6)
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
