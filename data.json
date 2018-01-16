@@ -1,153 +1,123 @@
 {
-    "name": "Нығмет",
-    "children": [
-        {
-            "name": "Болат",
-            "free": true,
-            "description": "",
-            "children": [
-                {
-                    "name": "Қожабек",
-                    "free": true,
-                    "description": "Болатов Қожабек [Атыбай]",
-                    "children": [
-                        {
-                            "name": "Бейбіт",
-                            "free": true,
-                            "description": "Болатов Бейбіт",
-                            "children": [
-                                {
-                                    "name": "Жанас",
-                                    "free": true,
-                                    "description": "Болатов Жанас",
-                                    "children": []
-                                },
-                                {
-                                    "name": "Әнуар",
-                                    "free": true,
-                                    "description": "Қожабек Әнуар",
-                                    "children": []
-                                },
-                                {
-                                    "name": "Қайсар",
-                                    "free": true,
-                                    "description": "Қожабек Қайсар",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Биеке",
-                            "free": true,
-                            "description": "Болатов Биеке",
-                            "children": [
-                                {
-                                    "name": "Руслан",
-                                    "free": true,
-                                    "description": "Болатов Руслан",
-                                    "children": [
+    "name": "Бұжбан",
+    "description": "",
+    "children": [{
+        "name": "Мекет",
+        "description": "",
+        "children": [{
+            "name": "Нығмет",
+            "children": [{
+                    "name": "Болат",
+                    "description": "",
+                    "children": [{
+                            "name": "Қожабек",
+                            "description": "Болатов Қожабек [Атыбай]",
+                            "children": [{
+                                    "name": "Бейбіт",
+                                    "description": "Болатов Бейбіт",
+                                    "children": [{
+                                            "name": "Жанас",
+                                            "description": "Болатов Жанас",
+                                            "children": []
+                                        },
                                         {
-                                            "name": "Әл-Фараби",
-                                            "free": true,
-                                            "description": "Биеке Әл-Фараби",
+                                            "name": "Әнуар",
+                                            "description": "Қожабек Әнуар",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Қайсар",
+                                            "description": "Қожабек Қайсар",
                                             "children": []
                                         }
                                     ]
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Мереке",
-                            "free": true,
-                            "description": "Болатов Мереке",
-                            "children": [
-                                {
-                                    "name": "Алмер",
-                                    "free": true,
-                                    "description": "Болатов Алмер",
-                                    "children": []
                                 },
                                 {
-                                    "name": "Қайнар",
-                                    "free": true,
-                                    "description": "Болатов Қайнар",
-                                    "children": []
-                                }
-                            ]
-                        },
-                        {
-                            "name": "Райымбек",
-                            "free": true,
-                            "description": "Болатов Райымбек",
-                            "children": [
-                                {
-                                    "name": "Манас",
-                                    "free": true,
-                                    "description": "Болатов Манас",
-                                    "children": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "Жұмке",
-                    "free": true,
-                    "description": "Бейсенбаев Жұмке [Ағатай]",
-                    "children": [
-                        {
-                            "name": "Айдархан",
-                            "free": true,
-                            "description": "Бейсенбаев Айдархан",
-                            "children": [
-                                {
-                                    "name": "Старший сары бала",
-                                    "free": true,
-                                    "description": "",
-                                    "children": []
+                                    "name": "Биеке",
+                                    "description": "Болатов Биеке",
+                                    "children": [{
+                                        "name": "Руслан",
+                                        "description": "Болатов Руслан",
+                                        "children": [{
+                                            "name": "Әл-Фараби",
+                                            "description": "Биеке Әл-Фараби",
+                                            "children": []
+                                        }]
+                                    }]
                                 },
                                 {
-                                    "name": "Младший сары бала",
-                                    "free": true,
-                                    "description": "",
+                                    "name": "Мереке",
+                                    "description": "Болатов Мереке",
+                                    "children": [{
+                                            "name": "Алмер",
+                                            "description": "Болатов Алмер",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Қайнар",
+                                            "description": "Болатов Қайнар",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Райымбек",
+                                    "description": "Болатов Райымбек",
+                                    "children": [{
+                                        "name": "Манас",
+                                        "description": "Болатов Манас",
+                                        "children": []
+                                    }]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Жұмке",
+                            "description": "Бейсенбаев Жұмке [Ағатай]",
+                            "children": [{
+                                    "name": "Айдархан",
+                                    "description": "Бейсенбаев Айдархан",
+                                    "children": [{
+                                            "name": "Старший сары бала",
+                                            "description": "",
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Младший сары бала",
+                                            "description": "",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Қайрат",
+                                    "description": "Бейсенбаев Қайрат",
                                     "children": []
                                 }
                             ]
                         },
                         {
-                            "name": "Қайрат",
-                            "free": true,
-                            "description": "Бейсенбаев Қайрат",
+                            "name": "Жұмке",
+                            "description": "Болатов Жұмке [Бәтәй]",
+                            "children": [{
+                                "name": "Жанкелді",
+                                "description": "Болатов Жанкелді",
+                                "children": []
+                            }]
+                        },
+                        {
+                            "name": "Кенжебек",
+                            "description": "",
                             "children": []
                         }
                     ]
                 },
                 {
-                    "name": "Жұмке",
-                    "free": true,
-                    "description": "Болатов Жұмке [Бәтәй]",
-                    "children": [
-                        {
-                            "name": "Жанкелді",
-                            "free": true,
-                            "description": "Болатов Жанкелді",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "name": "Кенжебек",
-                    "free": true,
+                    "name": "Файызрахман",
                     "description": "",
                     "children": []
                 }
             ]
-        },
-        {
-            "name": "Файызрахман",
-            "free": true,
-            "description": "",
-            "children": []
-        }
-    ]
+        }]
+    }]
 }
