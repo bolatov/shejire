@@ -27,7 +27,11 @@
                                                 {
                                                     "name": "Әнуар",
                                                     "description": "Қожабек Әнуар",
-                                                    "children": []
+                                                    "children": [{
+                                                        "name": "Нәби",
+                                                        "description": "Бейбіт Нәби",
+                                                        "children": []
+                                                    }]
                                                 },
                                                 {
                                                     "name": "Қайсар",
