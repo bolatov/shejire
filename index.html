@@ -4,23 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <link type="text/css" rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="js/d3.v3.min.js"></script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-55956641-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  <!-- <script type="text/javascript" src="js/d3.v3.min.js"></script>-->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="data.js"></script>
 </head>
 
 <body>
@@ -33,10 +19,11 @@
       <!-- <div class="hint"><p>This is an overview of tools available for building web-based data visualisations and is for a presentation by <a href="http://animateddata.co.uk">Peter Cook</a> at <a href="http://www.meetup.com/Data-Visualisation-Brighton/">Data Visualisation Brighton</a>.</p><p>It is not comprehensive. If you feel there's a glaring omission please <a href="http://animateddata.co.uk/contact/">contact me</a>. (For a more comprehensive list try Andy Kirk's <a href="http://www.visualisingdata.com/index.php/resources/">Visualising Data</a>.)</p><p>This is an adaptation of Mike Bostock's D3 tree layout <a href="http://mbostock.github.io/d3/talk/20111018/tree.html">example</a>. Thanks Mike :)</p><p>Click a circle to expand or collapse. Grey indicates not free.</p><p>I'm available <a href="http://animateddata.co.uk/contact">for hire</a>.</p><p><a href="http://animateddata.co.uk/training">Find out</a> about my <a href="http://animateddata.co.uk/training">data visualisation workshops</a></p>.</div> -->
     </div>
   </div>
-  <script type="text/javascript">
-    var m = [20, 120, 20, 20],
-      w = 1920 - m[1] - m[3],
-      h = 1080 - m[0] - m[2],
+  <script src="vertical_tree.js"></script>
+  <!-- <script type="text/javascript">
+    var m = [20, 120, 20, 20],  // margin
+      w = 2060 - m[1] - m[3],   // width
+      h = 1120 - m[0] - m[2],   // height
       i = 0,
       root;
 
@@ -225,7 +212,7 @@
         d._children = null;
       }
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
