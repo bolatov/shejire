@@ -119,7 +119,11 @@
                         {
                             "name": "Файызрахман",
                             "description": "",
-                            "children": []
+                            "children": [{
+                                "name": "Оразбай",
+                                "description": "",
+                                "children": []
+                            }]
                         }
                     ]
                 }]
