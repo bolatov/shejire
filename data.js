@@ -132,9 +132,41 @@ const treeData = {
                                                                                             "name": "Теміржан",
                                                                                             "description": "",
                                                                                             "children": [{
-                                                                                                "name": "Қамай",
+                                                                                                "name": "Қамидолла (Қамай)",
                                                                                                 "description": "",
-                                                                                                "children": []
+                                                                                                "children": [
+                                                                                                    {
+                                                                                                        "name": "Аплаш",
+                                                                                                        "description": "",
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "name": "Жәнібек",
+                                                                                                                "description": "",
+                                                                                                                "children": []
+                                                                                                            }, 
+                                                                                                            {
+                                                                                                                "name": "Қазыбек",
+                                                                                                                "description": "",
+                                                                                                                "children": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "name": "Сәдібек",
+                                                                                                                "description": "",
+                                                                                                                "children": []
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "name": "Айдымбет",
+                                                                                                                "description": "",
+                                                                                                                "children": []
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "Мағрып",
+                                                                                                        "description": "",
+                                                                                                        "children": []
+                                                                                                    }
+                                                                                                ]
                                                                                             }]
                                                                                         },
                                                                                         {
@@ -151,7 +183,11 @@ const treeData = {
                                                                                                                     "children": [{
                                                                                                                             "name": "Жанас",
                                                                                                                             "description": "Болатов Жанас",
-                                                                                                                            "children": []
+                                                                                                                            "children": [{
+                                                                                                                                "name": "Алинур",
+                                                                                                                                "description": "",
+                                                                                                                                "children": []
+                                                                                                                            }]
                                                                                                                         },
                                                                                                                         {
                                                                                                                             "name": "Әнуар",
@@ -193,7 +229,11 @@ const treeData = {
                                                                                                                         {
                                                                                                                             "name": "Қайнар",
                                                                                                                             "description": "Болатов Қайнар",
-                                                                                                                            "children": []
+                                                                                                                            "children": [{
+                                                                                                                                "name": "Алпар",
+                                                                                                                                "description": "",
+                                                                                                                                "children": []
+                                                                                                                            }]
                                                                                                                         }
                                                                                                                     ]
                                                                                                                 },
@@ -261,7 +301,7 @@ const treeData = {
                                                                                             ]
                                                                                         },
                                                                                         {
-                                                                                            "name": "Б****",
+                                                                                            "name": "Банан",
                                                                                             "description": "",
                                                                                             "children": []
                                                                                         },
